@@ -1,0 +1,2 @@
+npm config set http-proxy http://192.168.136.130:80
+npm config set https-proxy http://192.168.136.130:80

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="/stylesheets/index.css">
+</head>
+
+<body>
+
+   <h1>NOTRE QUIZZ</h1>
+
+  <!-- Canvas -->
+  <canvas id="quizz-canvas" width="600" height="600"></canvas>
+
+  <!-- JavaScripts -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/javascripts/QuizzCanvas.js"></script>
+  <script src="/javascripts/QuizzSocket.js"></script>
+  <script>
+    const canvas = new QuizzCanvas();
+    const socket = new QuizzSocket(canvas);
+  </script>
+</body>
+</html>
